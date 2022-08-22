@@ -1,12 +1,14 @@
 
-.user-component {
-    justify-content: space-between;
-}
 
 .user-component, .user-component__column:first-child {
     display: flex;
     align-items: center;
 }
+
+.user-component {
+    justify-content: space-between;
+}
+
 
 .user-component__avatar {
     width: 70px;
@@ -34,6 +36,7 @@
 .user-component__avatar--sm {
     width: 60px;
     height: 60px;
+    margin-bottom: 5px;
 }
 
 .user-component__title--not-bold {
