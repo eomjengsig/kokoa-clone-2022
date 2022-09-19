@@ -1,0 +1,79 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #6cbcbe;
+  height: 100vh;
+}
+
+.box {
+  display: flex;
+  height: 250px;
+  align-items: center;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  margin: 20px;
+}
+
+.bar {
+  width: 20px;
+  height: 80px;
+  background-color: white;
+  margin: 5px;
+}
+@keyframes circle_ani {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+.box:first-child {
+  animation: circle_ani 1s ease-in-out infinite;
+}
+@keyframes bar_ani {
+  0% {
+    transform: scaleY(1);
+  }
+  20% {
+    transform: scaleY(1.5);
+  }
+  40% {
+    transform: scaleY(1);
+  }
+  60% {
+    transform: scaleY(1);
+  }
+  80% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+.bar:nth-child(1) {
+  animation: bar_ani 0.5s ease-in-out infinite;
+}
+.bar:nth-child(2) {
+  animation: bar_ani 0.5s ease-in-out infinite;
+  animation-delay: 0.1s;
+}
+.bar:nth-child(3) {
+  animation: bar_ani 0.5s ease-in-out infinite;
+  animation-delay: 0.2s;
+}
+.bar:nth-child(4) {
+  animation: bar_ani 0.5s ease-in-out infinite;
+  animation-delay: 0.3s;
+}
+.bar:nth-child(5) {
+  animation: bar_ani 0.5s ease-in-out infinite;
+  animation-delay: 0.4s;
+}

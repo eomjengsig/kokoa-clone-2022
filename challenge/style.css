@@ -1,0 +1,32 @@
+body {
+  height: 100vh;
+  display: flex;
+  background-color: #ff6446;
+  align-items: center;
+  justify-content: center;
+}
+
+.big {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f5deb3;
+  width: 300px;
+  height: 300px;
+  border: 3px solid black;
+}
+
+.sm_1 {
+  background-color: #008080;
+  width: 70px;
+  height: 70px;
+  border: 3px solid white;
+}
+
+.sm_2 {
+  background-color: #008080;
+  width: 255px;
+  height: 70px;
+  border: 3px dashed white;
+}
